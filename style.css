@@ -45,7 +45,10 @@ nav a:hover {
 main {
     display: flex; /* Horizontal layout */
     justify-content: space-between; /* Spread content horizontally */
-    padding: 20px; /* Padding on left and right */
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
     color: black; /* Default black text */
 }
 
@@ -79,9 +82,10 @@ article img {
 /* Aside styling */
 aside {
     width: 30%; /* Sidebar takes 30% of the width */
-    padding-left: 20px;
+    padding-left: 40px;
     display: flex;
     flex-direction: column; /* Display content vertically */
+    text-align: justify;
 }
 
 aside a {
@@ -93,22 +97,22 @@ aside a {
 /* Footer Styling */
 footer {
     text-align: center; /* Center the footer */
-    padding: 40px 20px;
-    background-color: #f1f1f1;
+    padding: 20px 20px;
 }
 
 /* Footer category buttons */
 .footer-category {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .footer-category button {
     background-color: grey;
     color: black;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 30px; /*Make the box slightly larger*/
     margin: 10px;
     cursor: pointer;
+    border-radius: 7px; /*Slightly rounded button edges*/
 }
 
 .footer-category button:hover {
@@ -152,4 +156,63 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: grey; /* Change button color on hover */
+}
+
+/*Responsive 321 x 400*/
+@media (max-width: 321px) and (max-height: 400px){
+        /* Adjust navbar */
+        nav p {
+            font-size: 18px; /* Smaller font size for title */
+        }
+    
+        nav ul {
+            flex-direction: column; /* Stack links vertically */
+        }
+    
+        nav ul li {
+            margin: 10px 0; /* Add vertical spacing between links */
+        }
+    
+        /* Main section adjustment */
+        main {
+            flex-direction: column; /* Stack article and aside vertically */
+            padding: 20px; /* Reduce padding on small screens */
+        }
+    
+        article {
+            width: 100%; /* Article takes full width on small screens */
+        }
+    
+        aside {
+            width: 100%; /* Sidebar takes full width on small screens */
+            padding-left: 0; /* Remove padding to fit screen */
+            padding-top: 20px; /* Add padding on top for spacing */
+        }
+    
+        article img {
+            width: 100%; /* Make image take full width */
+            height: auto; /* Keep aspect ratio */
+        }
+    
+        /* Footer adjustment */
+        .footer-category {
+            flex-direction: column; /* Stack footer buttons vertically */
+        }
+    
+        .footer-category button {
+            width: 100%; /* Make buttons take full width */
+            max-width: 300px; /* Limit max width of buttons */
+        }
+    
+        form {
+            width: 100%; /* Form takes full width of the screen */
+            padding: 0 20px; /* Add padding for spacing */
+        }
+    
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="submit"] {
+            width: 100%; /* Inputs and submit button take full width */
+            max-width: 300px; /* Limit max width for inputs */
+        }
 }
