@@ -1,0 +1,155 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the Nav Bar */
+nav {
+    width: 100%; /* Full width */
+    background-color: black; /* Black background */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center;
+}
+
+nav p {
+    color: white; /* White font color */
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 10px; /* Space between title and links */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal links */
+    justify-content: center; /* Center links horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+nav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main section styling */
+main {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Spread content horizontally */
+    padding: 20px; /* Padding on left and right */
+    color: black; /* Default black text */
+}
+
+/* Article styling */
+article {
+    width: 70%; /* Article section width */
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    text-align: justify; /* Justify the text */
+}
+
+article img {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.article-title {
+    margin-bottom: 10px; /* Space between title and date */
+}
+
+.article-date {
+    color: grey; /* Date color is grey */
+    margin-bottom: 15px; /* Space between date and content */
+}
+
+.article-content {
+    margin-bottom: 30px; /* Space between content and next section */
+}
+
+/* Aside styling */
+aside {
+    width: 30%; /* Sidebar takes 30% of the width */
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column; /* Display content vertically */
+}
+
+aside a {
+    color: black; /* Links in the aside section are black */
+    text-decoration: underline; /* Underline the links */
+    margin-bottom: 15px; /* Space between links */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center the footer */
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+}
+
+/* Footer category buttons */
+.footer-category {
+    margin-bottom: 20px;
+}
+
+.footer-category button {
+    background-color: grey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-category button:hover {
+    background-color: darkgrey; /* Change color on hover */
+}
+
+.footer-category a {
+    text-decoration: none; /* Remove underline from buttons */
+}
+
+.footer-category {
+    display: flex; /* Display buttons horizontally */
+    justify-content: center; /* Center the buttons */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    text-align: left; /* Left align the labels */
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: grey; /* Change button color on hover */
+}
